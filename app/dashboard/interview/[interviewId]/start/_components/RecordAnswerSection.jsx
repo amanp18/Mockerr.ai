@@ -47,11 +47,12 @@ const RecordAnswerSection = ({MockIntQuestion,activestateques,interviewData}) =>
     const StartStopRecording=async()=>{
       if(isRecording)
       {
-        startSpeechToText();
+        stopSpeechToText()
+       
       }
       else{
+        startSpeechToText();
         
-        stopSpeechToText()
       }
     }
 
@@ -91,7 +92,7 @@ setLoading(false);
   return (
     <div>
            <div className='flex flex-col mt-20 justify-center items-center bg-black rounded-lg p-5'>
-            <Image src={'https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.cleanpng.com%2Fpng-computer-icons-webcam-webcam-3623761%2F&psig=AOvVaw2GrtS6WEZwoQ1eEfjKZZZI&ust=1727718519374000&source=images&cd=vfe&opi=89978449&ved=0CBEQjRxqFwoTCPDPppjb6IgDFQAAAAAdAAAAABAJ'} width={200} height={200} 
+            <Image src={'/webcam.png'} width={200} height={200} 
             className='absolute'/>
             <Webcam
             mirrored={true}
@@ -104,11 +105,11 @@ setLoading(false);
         </div>
         <Button 
         disabled={loading}
-        variant="outline" className="my-10"
+        variant="outline" className="my-10 text-white"
         onClick={StartStopRecording}
         >
             {isRecording?
-            <h2 className='text-white bg-red-600 border rounded-sm h-4 animate-pulse flex gap-2 items-center'>
+            <h2 className='text-white bg-red-600 border rounded-sm animate-pulse flex gap-2 items-center'>
                 <StopCircle/>Stop Recording
             </h2>
             :

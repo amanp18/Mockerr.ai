@@ -1,6 +1,6 @@
 import React from 'react'
 import { Lightbulb, Volume2 } from 'lucide-react'
-import { Toaster } from 'sonner';
+import { Toaster, toast } from 'sonner';
 
 const QuestionSection = ({MockIntQuestion,activestateques}) => {
 
@@ -10,7 +10,7 @@ const QuestionSection = ({MockIntQuestion,activestateques}) => {
         window.speechSynthesis.speak(speech)
     }
     else{
-        Toaster(<Volume2/>&&'Sorry, Your browser does not support text to speech')
+        toast(<Volume2/>&&'Sorry, Your browser does not support text to speech')
     }
 }
 
@@ -23,7 +23,7 @@ const QuestionSection = ({MockIntQuestion,activestateques}) => {
                 ${activestateques==index&&'bg-primary text-white'}`}>Question #{index+1}</h2>
             ))}
         </div>
-       <h2 className='my-5 text-md md:text-lg'>{MockIntQuestion[activestateques]?.question}</h2>
+       <h2 className='my-5 text-md md:text-lg text-gray-300'>{MockIntQuestion[activestateques]?.question}</h2>
        <Volume2 className='cursor-pointer' onClick={()=>textToSpeach(MockIntQuestion[activestateques]?.question)} />
 
        <div className='border rounded-lg p-5 bg-blue-100 mt-20 '>

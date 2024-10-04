@@ -9,7 +9,7 @@ module.exports = {
   theme: {
   	extend: {
   		colors: {
-  			background: 'hsl(var(--background))',
+  			background: 'bg-gradient-to-r from-gray-900 via-gray-800 to-black',
   			foreground: 'hsl(var(--foreground))',
   			card: {
   				DEFAULT: 'hsl(var(--card))',
@@ -20,7 +20,7 @@ module.exports = {
   				foreground: 'hsl(var(--popover-foreground))'
   			},
   			primary: {
-  				DEFAULT: '#1170a7', 
+  				DEFAULT: '#FFA700', 
   				foreground: 'hsl(var(--primary-foreground))'
   			},
   			secondary: {

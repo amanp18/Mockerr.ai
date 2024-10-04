@@ -28,7 +28,7 @@ setMockIntQuestion(jsonMockResp)
     setinterviewData(result[0]);
   }
   return (
-    <div>
+    <div className='bg-gradient-to-r from-gray-900 via-gray-800 to-black'>
       <div className='grid grid-cols-1 md:grid-cols-2 gap-10'>
         <QuestionSection 
         MockIntQuestion={MockIntQuestion}

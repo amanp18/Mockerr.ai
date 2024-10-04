@@ -22,14 +22,14 @@ const Interview = ({ params }) => {
     setinterviewData(result[0]);
   }
   return (
-    <div className='my-10 '>
-      <h2 className='font-bold text-2xl'>Let's Get Started</h2>
+    <div className='my-10 bg-gradient-to-r from-gray-900 via-gray-800 to-black'>
+      <h2 className='font-bold text-2xl text-gray-300'>Let's Get Started</h2>
       <div className='grid grid-cols-1 md:grid-cols-2 gap-10'>
         <div className='flex flex-col my-5 gap-5 '>
           <div className='flex flex-col p-5 rounded-lg border gap-5'>
-            <h2 className='text-lg'><strong>Job Role/Job Position:</strong>{interviewData?.jobPosition} </h2>
-            <h2 className='text-lg'><strong>Job Description/Tech Stack:</strong>{interviewData?.jobDesc} </h2>
-            <h2 className='text-lg'><strong>Years of Experience:</strong>{interviewData?.jobExpe} </h2>
+            <h2 className='text-lg text-gray-300'><strong>Job Role/Job Position:</strong>{interviewData?.jobPosition} </h2>
+            <h2 className='text-lg text-gray-300'><strong>Job Description/Tech Stack:</strong>{interviewData?.jobDesc} </h2>
+            <h2 className='text-lg text-gray-300'><strong>Years of Experience:</strong>{interviewData?.jobExpe} </h2>
           </div>
           <div className='p-3 border rounded-lg border-yellow-300 bg-yellow-100'>
             <h2 className='flex gap-2 items-center text-yellow-500'> <Lightbulb /><strong>Information</strong></h2>

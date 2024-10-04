@@ -72,38 +72,39 @@ const router = useRouter()
         <h2 className='font-bold text-lg text-center'>+ Add New</h2>
       </div>
 
-      <Dialog open={isactive}>
+      <Dialog open={isactive} className='bg-gray-400'>
         <DialogContent className='max-w-2xl'>
           <DialogHeader>
-            <DialogTitle className='text-2xl'>Tell us more about Job you are interviewing</DialogTitle>
+            <DialogTitle className='text-2xl text-gray-300'>Tell us more about Job you are interviewing</DialogTitle>
             <DialogDescription>
               <form onSubmit={onSubmit}>
                 <div>
-                  <h2>Add Details about job position, Your skill and relevent experience.</h2>
-                  <div className='mt-7 my-3'>
+                  <h2 className='text-gray-300'>Add Details about job position, Your skill and relevent experience.</h2>
+                  <div className='mt-7 my-3 text-gray-300'>
                     <label>Job Role/Job Description</label>
                     <Input placeholder='Ex: Full stack developer' type='' required
                       onChange={(event) => { setJobRole(event.target.value) }} />
                   </div>
 
-                  <div className='mt-2 my-3'>
+                  <div className='mt-2 my-3 text-gray-300'>
                     <label>Technologies(In Short)</label>
                     <Textarea placeholder='Ex: React, Angular, Node, Sql' required
                       onChange={(event) => { settechstack(event.target.value) }} />
                   </div>
 
-                  <div className='mt-2 my-3'>Year of experience
+                  <div className='mt-2 my-3 text-gray-300'>Year of experience
                     <Input placeholder='Ex: 1,3' type='number' max='50' required
                       onChange={(event) => { setexperience(event.target.value) }} />
                   </div>
 
-                  <div className='flex gap-5 justify-between'>  </div>
+                  <div className='flex gap-5 justify-between'> 
                   <Button type='button' variant='ghost' className='bg-secondary hover:bg-red-600' onClick={() => { setisactive(false) }}>Cancel</Button>
                   <Button type='submit' className=' hover:bg-green-800'>
                     {loading ? <>
                       <LoaderCircle className='animate-spin' />Generating from AI..
                     </> : 'Start Interview'}
                   </Button>
+                  </div>
                 </div>
               </form>
             </DialogDescription>

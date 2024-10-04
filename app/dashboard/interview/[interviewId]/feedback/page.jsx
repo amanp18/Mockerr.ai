@@ -2,7 +2,7 @@ import React from 'react'
 
 const feedback = () => {
   return (
-    <div>feedback</div>
+    <div className='bg-gradient-to-r from-gray-900 via-gray-800 to-black'>feedback</div>
   )
 }
 
