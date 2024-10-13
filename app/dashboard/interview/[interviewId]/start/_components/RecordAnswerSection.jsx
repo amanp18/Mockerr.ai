@@ -45,6 +45,7 @@ const RecordAnswerSection = ({MockIntQuestion,activestateques,interviewData}) =>
     },[userAnswer])
 
     const StartStopRecording=async()=>{
+      console.log("ja")
       if(isRecording)
       {
         stopSpeechToText()

@@ -20,7 +20,7 @@ const QuestionSection = ({MockIntQuestion,activestateques}) => {
             {MockIntQuestion&&MockIntQuestion.map((question,index)=>(
                 <h2 className={`p-2 border rounded-full
                 text-xs md:text-sm text-center cursor-pointer
-                ${activestateques==index&&'bg-primary text-white'}`}>Question #{index+1}</h2>
+                ${activestateques==index&&'bg-primary text-white'}`} key={index}>Question #{index+1}</h2>
             ))}
         </div>
        <h2 className='my-5 text-md md:text-lg text-gray-300'>{MockIntQuestion[activestateques]?.question}</h2>
