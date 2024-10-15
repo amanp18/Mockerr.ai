@@ -13,8 +13,8 @@ const Header = () => {
     <div className=' flex p-4 items-center drop-shadow-lg justify-between border-black bg-gradient-to-r from-gray-900 via-gray-800 to-black text-white shadow-lg'>
     <a href="/"><h1 className=" hover:text-orange-600 text-2xl font-bold">Mockify.ai</h1></a>
     <ul className='hidden md:flex gap-8'>
-        <li className={` hover:text-orange-600 hover:font-bold transition-all cursor-pointer ${path=='/dashboard'&& 'text-primary font-bold'}`}>Dashboard</li>
-        <li className={` hover:text-orange-600 hover:font-bold transition-all cursor-pointer ${path=='/dashboard/questions'&& 'text-primary font-bold'}`}>Questions</li>
+        <li className={` hover:text-orange-600 hover:font-bold transition-all cursor-pointer ${path=='/dashboard'&& 'text-primary font-bold'}`}><a href="/dashboard">Dashboard</a></li>
+        <li className={` hover:text-orange-600 hover:font-bold transition-all cursor-pointer ${path=='/questions'&& 'text-primary font-bold'}`}><a href="/questions">Questions</a></li>
         <li className={` hover:text-orange-600 hover:font-bold transition-all cursor-pointer ${path=='/dashboard/upgrade'&& 'text-primary font-bold'}`}>Upgrade</li>
         <li className={` hover:text-orange-600   hover:font-bold transition-all cursor-pointer ${path=='/dashboard/how'&& 'text-primary font-bold'}`}>How it works?</li>
     </ul>
