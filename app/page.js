@@ -26,7 +26,7 @@ const LandingPage = () => {
 
 
             <h2 className="mt-12 font-bold text-3xl">How it Works?</h2>
-            <h2 className="text-md text-white">Give mock interview in just 3 simplar easy step</h2>
+            <h2 className="text-md text-white">Give mock interview in just 3 simple easy step</h2>
 
             <div className="mt-8 grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3">
               <a
@@ -37,11 +37,10 @@ const LandingPage = () => {
               >
                 <AtomIcon className='h-8 w-8' />
 
-                <h2 className="mt-4 text-xl font-bold text-white">Write promot for your form</h2>
+                <h2 className="mt-4 text-xl font-bold text-white">Write promo for your form</h2>
 
                 <p className="mt-1 text-sm text-gray-400">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex ut quo possimus adipisci
-                  distinctio alias voluptatum blanditiis laudantium.
+                Click here to add a brief, engaging promo for our form! Let users know what to expect and why they should fill it out!
                 </p>
               </a>
 
@@ -54,8 +53,7 @@ const LandingPage = () => {
                 <h2 className="mt-4 text-xl font-bold text-white">Edit Your form </h2>
 
                 <p className="mt-1 text-sm text-gray-400">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex ut quo possimus adipisci
-                  distinctio alias voluptatum blanditiis laudantium.
+                  Click here to edit your form!
                 </p>
               </a>
 
@@ -66,11 +64,10 @@ const LandingPage = () => {
 
                 <Share2 className='h-8 w-8' />
 
-                <h2 className="mt-4 text-xl font-bold text-white">Share & Start Accepting Responses</h2>
+                <h2 className="mt-4 text-xl font-bold text-white">Try Premium</h2>
 
                 <p className="mt-1 text-sm text-gray-400">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex ut quo possimus adipisci
-                  distinctio alias voluptatum blanditiis laudantium.
+                  Click here to try the premium version of our AI Mock Interview App!
                 </p>
               </a>
 
